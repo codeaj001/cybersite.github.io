@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: rgb(36, 36, 57);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+header > h2 {
+    color: #fff;
+    padding: 25px;
+}
+header > h2 > span{
+    color: #48c5ff;
+}
+
+header > nav {
+    color: #fff;
+}
+header > nav > ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+header > nav > ul > li {
+    padding-top: 25px;
+}
+header > nav > ul > li > a {
+    padding: 25px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+header > nav > ul > li > a:hover {
+    color: orange;
+    font-weight: bold;
+}
+
+header > a > button{
+    padding: 10px 20px;
+    margin: 20px 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: orange;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0px 20px 0px 20px;
+}
+header > a > button:hover{
+    outline: none;
+    border: none;
+    border-radius: 20px 0px 20px 0px;
+}
+
+/* responsive bar starts here */
+
+@media (max-width: 1200px) {
+    
+}
+/* responsive bar stops here */
+
+/* End of navigation bar styling
+beginning of homepage */
+
+main {
+    height: calc(100vh - 80px);
+    display: flex;
+    width: 100%;
+    background-color:rgb(36, 36, 57);
+}
+
+.main-left {
+    width: 45%;
+    margin: 50px 0px 10px 100px;
+}
+
+.main-left > h1 {
+    font-size: 60px;
+    color: #fff;
+}
+
+.main-left > p {
+    font-size: 18px;
+    color: #c3c3c3;
+    margin-top: 15px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.main-left > a > button{
+    padding: 10px 30px;
+    margin-right: 4px;
+    color: #fff;
+}
+
+.main-left > a > .getStarted{
+    background-color: #48c5ff;
+    outline: none;
+    border: 1px solid #48c5ff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-left > a > .getStarted:hover{
+    background-color: rgb(36, 36, 57);
+    outline: none;
+    border: 1px solid #9ecee4;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-left > a > .contactUs{
+    background-color: rgb(36, 36, 57);
+    outline: none;
+    border: 1px solid #9ecee4;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main-left > a > .contactUs:hover{
+    background-color: #48c5ff;
+    outline: none;
+    border: 1px solid #48c5ff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-right > img {
+    width: 70%;
+}
+
+
+
+/* End of homepgae 
+beginning of solutions page */
+
+.solutions {
+    background-color: rgb(17, 17, 39);
+    text-align: center;
+}
+
+.solutions > h2 {
+    color: rgba(101, 101, 101, 0.436);
+    font-size: 15px;
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+.solutions > h1 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding-top: 9px;
+}
+.solutions > .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.solutions > .items > div {
+    height: 450px;
+    width: 300px;
+    background-color: rgb(36, 36, 57);
+    margin: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 90px;
+}
+
+.solutions > .items > div > img {
+    height: 120px;
+    margin-top: 20px;
+}
+
+.solutions > .items > div > h3 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.solutions > .items > div > p {
+    color: #b5b5b5;
+    margin: 20px 15px;
+}
+
+.solutions > .items > div > a > button {
+    padding: 10px 18px;
+    background-color: rgb(36, 36, 57);
+    outline: none;
+    border: 1px light #b5b5b5;
+    color: #fff;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Ending of solution page
+beginning of 24/7 page */
+
+.operation {
+    background-color: #313145;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.operation > .operation-image > img {
+    height: 500px;
+}
+
+.operation > .operation-texts > h4 {
+    color: rgb(36, 36, 111);
+    margin-top: 90px;
+}
+
+.operation > .operation-texts > h1 {
+    color: rgb(255, 255, 255);
+}
+
+.operation > .operation-texts > p {
+    color: #b5b5b5;
+    margin-top: 20px;
+    width: 400px;
+}
+
+.operation > .operation-texts > .operation-list-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.operation > .operation-texts > .operation-list-items > div {
+    margin: 15px 15px;
+    color: #b5b5b5;
+}
+
+.operation-list-items > div > ul {
+    list-style-type: circle;
+}
+
+.operation-texts > a > button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #48c5ff;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.operation-texts > a > button:hover {
+    background-color: rgb(36, 36, 57);
+    border: 1px solid #b5b5b5;
+}
+
+/* Footer styling beginning */
+footer {
+    background-color: rgb(17, 17, 39);
+    color: #fff;
+}
+
+footer > .testimonies {
+    background-color: rgb(17, 17, 39);
+    padding: 30px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+footer > .testimonies > .up,
+footer > .testimonies > .down {
+    margin: 20px;
+}
+
+footer > .testimonies > .up > .counts,
+footer > .testimonies > .down > .counts {
+    padding: 40px 20px;
+    font-size: 20px;
+}
+
+footer > .testimonies > .up > .counts > h3,
+footer > .testimonies > .down > .counts > h3 {
+    color: #48c5ff;
+}
+
+footer > a {
+    position: relative;
+    left: 90%;
+    font-size: 30px;
+    height: 30px;
+    color: #fff;
+    margin-bottom: 100px;
+}
