@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <h2>Cyber<span>Site</span></h2>
+        <a href="index.html"><h2>Cyber<span>Site</span></h2></a>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#services">Services</a></li>
                 <!-- <li><a href="#">Pages</a></li> -->
             </ul>
         </nav>
@@ -32,7 +32,7 @@
         </div>
     </main>
 
-    <section class="solutions">
+    <section class="solutions" id="services">
         <h2>OUR SERVICES</h2>
         <h1>Cyber Security Solutions</h1>
         <div class="items">
@@ -57,7 +57,9 @@
         </div>
     </section>
 
-    <section class="operation">
+
+    <!-- About us -->
+    <section class="operation" id="aboutus">
         <div class="operation-image">
             <img src="img/operation.png" alt="#">
         </div>
@@ -88,25 +90,26 @@
     </section>
 
     <footer>
-       <div class="testimonies">
-        <div class="up">
-            <div class="counts">50+
-                <h3>Clients</h3>
+       <div class="foot">
+            <div class="foot-items">
+                <div class="nav">
+                    <ul>
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="#aboutus"><li>About</li></a>
+                        <a href="#services"><li>Services</li></a>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <form action="#">
+                        <input class="mail" type="email" placeholder="Enter your email">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
             </div>
-            <div class="counts">10+
-                <h3>Partners</h3>
+            <div class="copy">
+                <h3>Copyright &copy; All Rights Reserved. Created by <a target="_blank" href="https://github.com/codeaj001">Code AJ</a></h3>
             </div>
-        </div>
-        <div class="down">
-            <div class="counts">600+
-                <h3>Students</h3>
-            </div>
-            <div class="counts">4<span>&#9733;</span>
-                <h3>Reviews</h3>
-            </div>
-        </div>
        </div>
-       <a href="index.html">&#8593;</a>
     </footer>
 </body>
 </html>

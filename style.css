@@ -10,11 +10,15 @@ header {
     justify-content: space-between;
     height: 80px;
 }
-header > h2 {
+header > a {
+    text-decoration: none;
+}
+header > a > h2 {
     color: #fff;
     padding: 25px;
+    cursor: pointer;
 }
-header > h2 > span{
+header > a > h2 > span{
     color: #48c5ff;
 }
 
@@ -133,7 +137,8 @@ main {
 }
 
 .main-right > img {
-    width: 70%;
+    width: 90%;
+    height: calc(100vh - 80px);
 }
 
 
@@ -147,7 +152,7 @@ beginning of solutions page */
 }
 
 .solutions > h2 {
-    color: rgba(101, 101, 101, 0.436);
+    color: #48c5ff;
     font-size: 15px;
     padding-top: 40px;
     font-weight: bold;
@@ -214,8 +219,9 @@ beginning of 24/7 page */
 }
 
 .operation > .operation-texts > h4 {
-    color: rgb(36, 36, 111);
-    margin-top: 90px;
+    color: #48c5ff;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 .operation > .operation-texts > h1 {
@@ -260,7 +266,7 @@ beginning of 24/7 page */
 
 /* Footer styling beginning */
 footer {
-    background-color: rgb(17, 17, 39);
+    background-color: rgb(36, 36, 57);
     color: #fff;
 }
 
@@ -288,11 +294,75 @@ footer > .testimonies > .down > .counts > h3 {
     color: #48c5ff;
 }
 
-footer > a {
-    position: relative;
-    left: 90%;
-    font-size: 30px;
-    height: 30px;
-    color: #fff;
-    margin-bottom: 100px;
+.foot-items {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(36, 36, 57);
 }
+
+.nav {
+    padding: 20px 100px;
+    line-height: 30px;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav ul a:hover {
+    color: #48c5ff;
+}
+
+.newsletter {
+    padding-right: 200px;
+    padding-top: 50px;
+}
+.mail {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    outline: none;
+    color: #313145;
+    font-weight: bolder;
+}
+.mail::placeholder{
+    color: #48c5ff;
+    font-weight: bold;
+}
+.newsletter form input[type="submit"]{
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100px;
+    color:#313145;
+    font-weight: bold;
+    background-color: #48c5ff;
+}
+.newsletter form input[type="submit"]:hover{
+    border: 1px solid #48c5ff;
+    background-color: #313145;
+    color: #48c5ff;
+}
+.copy {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.copy a {
+    color: #48c5ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* RESPONSIVENESS */
