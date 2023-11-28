@@ -4,11 +4,18 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    background-color: #48c5ff;
+}
+
 header {
     background-color: rgb(36, 36, 57);
     display: flex;
     justify-content: space-between;
     height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 89;
 }
 header > a {
     text-decoration: none;
@@ -59,27 +66,54 @@ header > a > button:hover{
     border: none;
     border-radius: 20px 0px 20px 0px;
 }
-
-/* responsive bar starts here */
-
-@media (max-width: 1200px) {
-    
+.phoneNav{
+    background-color: #48c5ff;
+    color:rgb(17, 17, 39);
+    font-size: 18px;
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    float: right;
+    top: 80px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
 }
-/* responsive bar stops here */
+
+.phoneNav nav ul {
+    list-style-type: none;
+}
+.phoneNav nav ul a {
+    text-decoration: none;
+    padding: 90px;
+}
+
+.phoneNav nav ul a:hover {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.contactB{
+    border: none;
+    outline: none;
+    padding: 10px;
+}
 
 /* End of navigation bar styling
 beginning of homepage */
 
 main {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 2px);
     display: flex;
     width: 100%;
     background-color:rgb(36, 36, 57);
+
 }
 
 .main-left {
     width: 45%;
-    margin: 50px 0px 10px 100px;
+    margin: 130px 0px 10px 100px;
 }
 
 .main-left > h1 {
@@ -117,6 +151,7 @@ main {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
+    color: #48c5ff;
 }
 
 .main-left > a > .contactUs{
@@ -138,7 +173,7 @@ main {
 
 .main-right > img {
     width: 90%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 5px);
 }
 
 
@@ -149,6 +184,9 @@ beginning of solutions page */
 .solutions {
     background-color: rgb(17, 17, 39);
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
 }
 
 .solutions > h2 {
@@ -171,7 +209,7 @@ beginning of solutions page */
 
 .solutions > .items > div {
     height: 450px;
-    width: 300px;
+    width: 30%;
     background-color: rgb(36, 36, 57);
     margin: 10px;
     border-radius: 10px;
@@ -191,7 +229,7 @@ beginning of solutions page */
 
 .solutions > .items > div > p {
     color: #b5b5b5;
-    margin: 20px 15px;
+    padding: 20px 15px;
 }
 
 .solutions > .items > div > a > button {
@@ -203,7 +241,12 @@ beginning of solutions page */
     margin-top: 15px;
     cursor: pointer;
 }
-
+.solutions .items div a button:hover {
+    color: #48c5ff;
+    border: 1px solid #48c5ff;
+    border-right: none;
+    border-bottom: none;
+}
 /* Ending of solution page
 beginning of 24/7 page */
 
@@ -212,10 +255,19 @@ beginning of 24/7 page */
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0 auto;
+    width: 100%;
 }
 
+.operation-image {
+    width: 45%;
+}
 .operation > .operation-image > img {
     height: 500px;
+}
+
+.operation-texts {
+    width: 45%;
 }
 
 .operation > .operation-texts > h4 {
@@ -231,7 +283,6 @@ beginning of 24/7 page */
 .operation > .operation-texts > p {
     color: #b5b5b5;
     margin-top: 20px;
-    width: 400px;
 }
 
 .operation > .operation-texts > .operation-list-items {
@@ -268,6 +319,9 @@ beginning of 24/7 page */
 footer {
     background-color: rgb(36, 36, 57);
     color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
 }
 
 footer > .testimonies {
