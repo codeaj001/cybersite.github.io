@@ -1,133 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CyberSite</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
     <script src="js/main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="index.html"><h2>Cyber<span>Site</span><i class="fa fa-laptop" aria-hidden="true"></i></h2></a>
-        <nav>
+      <a href="index.html"
+        ><h2>
+          Cyber<span>Site</span
+          ><i class="fa fa-laptop" aria-hidden="true"></i></h2
+      ></a>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </nav>
+      <a
+        href="mailto:hello.cybersite@gmail.com?Subject=Cyber Security Solutions"
+        ><button>
+          Contact us&nbsp;<i
+            class="fa fa-envelope"
+            aria-hidden="true"
+          ></i></button
+      ></a>
+      <div class="barIcon">
+        <i class="fa fa-bars" aria-hidden="true" onclick="phoneBar()"></i>
+        <section class="phoneNav">
+          <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#aboutus">About Us</a></li>
-                <li><a href="#services">Services</a></li>
+              <a href="#"><li>Home</li></a>
+              <a href="#aboutus"><li>About Us</li></a>
+              <a href="#services"><li>Services</li></a>
+              <a
+                href="mailto:hello.cybersite@gmail.com?Subject=Cyber Security Solutions"
+                ><li>Contact</li></a
+              >
             </ul>
-        </nav>
-        <a href="mailto:hello.cybersite@gmail.com?Subject=Cyber Security Solutions"><button>Contact us&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i></button></a>
-        <div class="barIcon">
-            <i class="fa fa-bars" aria-hidden="true" onclick="phoneBar()"></i>
-            <section class="phoneNav">
-                <nav>
-                    <ul>
-                        <a href="#"><li>Home</li></a>
-                        <a href="#aboutus"><li>About Us</li></a>
-                        <a href="#services"><li>Services</li></a>
-                        <a href="mailto:hello.cybersite@gmail.com?Subject=Cyber Security Solutions"><li>Contact</li></a>
-                    </ul>
-                </nav>
-            </section>
-        </div>
-
+          </nav>
+        </section>
+      </div>
     </header>
 
-    
-
     <main>
-        <div class="main-left">
-            <h1>We Provide Cyber Solutions For Your Security.</h1>
-            <p>Empowering Digital Fortresses: Your Trusted Partner in Cybersecurity Solutions.</p>
-            <a href="https://wa.me/c/2349150633122" target="_blank"><button class="getStarted">Get Started <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
-            <a href="mailto:hello.cybersite@gmail.com?Subject=Cyber Security Solutions"><button class="contactUs">Contact us &nbsp;<i class="fa fa-envelope" aria-hidden="true"></i></button></a>
-        </div>
-        <div class="main-right">
-            <img src="img/cyberimage.jpg" alt="Cyber Sec Image">
-        </div>
+      <div class="main-left">
+        <h1>We Provide Cyber Solutions For Your Security.</h1>
+        <p>
+          Empowering Digital Fortresses: Your Trusted Partner in Cybersecurity
+          Solutions.
+        </p>
+        <a href="https://wa.me/c/2349150633122" target="_blank"
+          ><button class="getStarted">
+            Get Started
+            <i class="fa fa-arrow-right" aria-hidden="true"></i></button
+        ></a>
+        <a
+          href="mailto:hello.cybersite@gmail.com?Subject=Cyber Security Solutions"
+          ><button class="contactUs">
+            Contact us &nbsp;<i
+              class="fa fa-envelope"
+              aria-hidden="true"
+            ></i></button
+        ></a>
+      </div>
+      <div class="main-right">
+        <img src="img/cyberimage.jpg" alt="Cyber Sec Image" />
+      </div>
     </main>
 
     <section class="solutions" id="services">
-        <h2>OUR SERVICES</h2>
-        <h1>Cyber Security Solutions</h1>
-        <div class="items">
-            <div class="solutions-items">
-                <img src="img/computersec.jpg" alt="#">
-                <h3>Threat Detection</h3>
-                <p>Offer real-time monitoring, analysis and swift response to identify and neutralize sophisticated cyber threats.</p>
-                <a href="https://wa.me/c/2349150633122"><button>Read More &nbsp;<i class="fa fa-book" aria-hidden="true"></i></button></a>
-            </div>
-            <div class="solutions-items">
-                <img src="img/foldersec.jpg" alt="#">
-                <h3>Penetration Testing</h3>
-                <p>Conduct comprehensive assessments of systems, applications and networks to uncover vulnerabilities and then provide expert guidance on how to address these weaknesses effectively.</p>
-                <a href="https://wa.me/c/2349150633122"><button>Read More &nbsp;<i class="fa fa-book" aria-hidden="true"></i></button></a>
-            </div>
-            <div class="solutions-items">
-                <img src="img/computersecurity.jpg" alt="#">
-                <h3>Cyber Security Training</h3>
-                <p>Develop customized training programs to educate employees about the latest cyebr threats, best practices and strategies to recognize and mitigate social engineering attacks,</p>
-                <a href="https://wa.me/c/2349150633122"><button>Read More &nbsp;<i class="fa fa-book" aria-hidden="true"></i></button></a>
-            </div>
+      <h2>OUR SERVICES</h2>
+      <h1>Cyber Security Solutions</h1>
+      <div class="items">
+        <div class="solutions-items">
+          <img src="img/computersec.jpg" alt="#" />
+          <h3>Threat Detection</h3>
+          <p>
+            Offer real-time monitoring, analysis and swift response to identify
+            and neutralize sophisticated cyber threats.
+          </p>
+          <a href="https://wa.me/c/2349150633122"
+            ><button>
+              Read More &nbsp;<i
+                class="fa fa-book"
+                aria-hidden="true"
+              ></i></button
+          ></a>
         </div>
+        <div class="solutions-items">
+          <img src="img/foldersec.jpg" alt="#" />
+          <h3>Penetration Testing</h3>
+          <p>
+            Conduct comprehensive assessments of systems, applications and
+            networks to uncover vulnerabilities and then provide expert guidance
+            on how to address these weaknesses effectively.
+          </p>
+          <a href="https://wa.me/c/2349150633122"
+            ><button>
+              Read More &nbsp;<i
+                class="fa fa-book"
+                aria-hidden="true"
+              ></i></button
+          ></a>
+        </div>
+        <div class="solutions-items">
+          <img src="img/computersecurity.jpg" alt="#" />
+          <h3>Cyber Security Training</h3>
+          <p>
+            Develop customized training programs to educate employees about the
+            latest cyebr threats, best practices and strategies to recognize and
+            mitigate social engineering attacks,
+          </p>
+          <a href="https://wa.me/c/2349150633122"
+            ><button>
+              Read More &nbsp;<i
+                class="fa fa-book"
+                aria-hidden="true"
+              ></i></button
+          ></a>
+        </div>
+      </div>
     </section>
-
 
     <!-- About us -->
     <section class="operation" id="aboutus">
-        <div class="operation-image">
-            <img src="img/operation.png" alt="#">
+      <div class="operation-image">
+        <img src="img/operation.png" alt="#" />
+      </div>
+      <div class="operation-texts">
+        <h4>ABOUT US</h4>
+        <h1>24/7 Cyber Security<br />Operation Center</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          voluptatum blanditiis vitae magnam vero dolore, nostrum sapiente eaque
+          ipsa autem excepturi
+        </p>
+        <div class="operation-list-items">
+          <div class="first-col">
+            <ul>
+              <li>Malware Detection Removal</li>
+              <li>Content Delivery network</li>
+              <li>Security Management</li>
+              <li>SIEM Threat Detection</li>
+            </ul>
+          </div>
+          <div class="second-col">
+            <ul>
+              <li>Cloud security</li>
+              <li>Cyber Security</li>
+              <li>Identifying Threats</li>
+              <li>Server Security</li>
+            </ul>
+          </div>
         </div>
-        <div class="operation-texts">
-            <h4>ABOUT US</h4>
-            <h1>24/7 Cyber Security<br>Operation Center</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatum blanditiis vitae magnam vero dolore, nostrum sapiente eaque ipsa autem excepturi</p>
-            <div class="operation-list-items">
-                <div class="first-col">
-                    <ul>
-                        <li>Malware Detection Removal</li>
-                        <li>Content Delivery network</li>
-                        <li>Security Management</li>
-                        <li>SIEM Threat Detection</li>
-                    </ul>
-                </div>
-                <div class="second-col">
-                    <ul>
-                        <li>Cloud security</li>
-                        <li>Cyber Security</li>
-                        <li>Identifying Threats</li>
-                        <li>Server Security</li>
-                    </ul>
-                </div>
-            </div>
-            <a href="https://wa.me/c/2349150633122" target="_blank"><button>Get Started</button></a>
-        </div>
+        <a href="https://wa.me/c/2349150633122" target="_blank"
+          ><button>Get Started</button></a
+        >
+      </div>
     </section>
 
     <footer>
-       <div class="foot">
-            <div class="foot-items">
-                <div class="nav">
-                    <ul>
-                        <a href="index.html"><li>Home</li></a>
-                        <a href="#aboutus"><li>About</li></a>
-                        <a href="#services"><li>Services</li></a>
-                    </ul>
-                </div>
-                <div class="newsletter">
-                    <form action="#">
-                        <input class="mail" type="email" placeholder="Enter your email">
-                        <input type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-            <div class="copy">
-                <h3>Copyright &copy; All Rights Reserved. Created by <a target="_blank" href="https://github.com/codeaj001">Code AJ</a></h3>
-            </div>
-       </div>
+      <div class="foot">
+        <div class="foot-items">
+          <div class="nav">
+            <ul>
+              <a href="index.html"><li>Home</li></a>
+              <a href="#aboutus"><li>About</li></a>
+              <a href="#services"><li>Services</li></a>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <form action="#">
+              <input class="mail" type="email" placeholder="Enter your email" />
+              <input type="submit" value="Subscribe" />
+            </form>
+          </div>
+        </div>
+        <div class="copy">
+          <h3>
+            Copyright &copy; All Rights Reserved. Created by
+            <a target="_blank" href="https://github.com/codeaj001">Code AJ</a>
+          </h3>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
